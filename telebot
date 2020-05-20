@@ -2,8 +2,8 @@ import pyowm
 import telebot
 from pyowm.exceptions import api_response_error
 
-owm = pyowm.OWM('4086f9b16065b2a2a98b558b17aad533', language='ru' )
-bot = telebot.TeleBot("1039356244:AAFxv2NuW7QRx91uw-JuXcqNe_zmZlq-GAw")
+owm = pyowm.OWM('token', language='ru' )
+bot = telebot.TeleBot("1token")
 
 @bot.message_handler(content_types=['text'])
 def send_echo(message):
